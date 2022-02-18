@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  min-height: 200px;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* CLASS HEADING */
+header{ 
+  height:65px;
+  width:100%;
+  position :fixed;
+  font-family: 'Oleo Script', cursive;
+  top: 0px;
+  z-index: 10;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+.header-left {
+  float: left;
+}
+.header-logo {
+  width: 250px;
+  margin-top: -90px;
+}
+
+.header-menu{
+  float:right;
+  margin-right: -25px;
+  margin-top:-15px;
+  transition:all 0.5s;
+}
+.header-menu li{
+  list-style:none;
+  float:left;
+}
+.header-menu a{
+  color: white;
+  line-height: 65px;
+  padding:15px 15px 5px 15px;
+}
+.header-menu a:hover{
+  background: #3f72af;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: bold;
+}
+.header-menu a:active{
+  background-color: rgba(34, 49, 52, 0.9);
+}
+.fa {
+  margin-right: 10px;
+}
+.menu-icon{
+  display: none;
+  color:white;
+  float:right;
+}
+/* BATAS CLASS HEADING */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* CLASS MAIN */
+.main {
+  padding: 150px 0 100px 0;
+  background: url(image/wave-d.png) 100% 100%;
+  background-size: cover;
+  background-color: #6c63ff;
+  color: rgb(3, 2, 2);
+  text-align: center;
+}
+
+
+.main-image span{
+  background-image: url(image/undraw_product_tour_re_8bai.svg) ;
+}
+
+.main h1 {
+  opacity: 0.8;
+  font-size: 45px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.main p {
+  opacity: 1;
+  text-align: justify;
+  margin-bottom: 3px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.btn-main {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+.main-button {
+  padding: 10px 40px;
+  background-color: #6c63ff;
+  color:white;
+  cursor: pointer;
+  box-shadow: 0 7px #000000;
+}
+.main-button:active{
+  position: relative;
+  background-color: #030303;
+  top: 7px;
+  box-shadow: none;
+}
+/* BATAS CLASS MAIN */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* CLASS BODY 1 */
+.body1{
+  padding: 0 0 100px 0;
+  background: url(image/wave-d2.png) 100% 100%;
+  background-size: cover;
+  background-color: #c23c3c;
+  color: rgb(3, 2, 2);
+  text-align: center;
+}
+
+.body1 h1{
+font-size: 45px;
+}
+
+.body1 p {
+font-size: 20px;
+}
+
+.body1-column {
+  width: 25%;
+  float: left;
+  padding: 10px 30px;
+}
+
+.body1-row {
+  margin: 10px 5px;
+}
+
+.body1-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.body1-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+
+
+}
+.body1-2{
+  padding: 0 0 100px 0;
+  background: url(image/wave-d.png) 100% 100%;
+  background-size: cover;
+  background-color: #c23c3c;
+  color: rgb(3, 2, 2);
+  text-align: center;
+}
+
+.body1-2 h1{
+  font-size: 45px;
+  }
+  
+.body1-2 p {
+  font-size: 20px;
+}
+
+/* BATAS CLASS BODY 1 */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* CLASS BODY 2 */
+
+.body2 {
+  padding: 0 0 100px 0;
+  /* background: url(image/wave-d.png) 80% 100%; */
+  background-size: cover;
+  background-image: linear-gradient(rgb(255, 255, 255), #374547);
+  color: rgb(3, 2, 2);
+  text-align: center;;
+  border-bottom: 2px dashed rgb(0, 0, 0);
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'comic sans ms';
+  color: black;
+}
+
+.tutor-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartu-tutor {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.kartu-tutor img {
+  width: 80%;
+  border-radius: 1%;
+}
+
+.kartu-tutor p {
+  font-family: 'comic sans ms';
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  color: #364f6b;
+}
+
+.partner-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartu-partner {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.kartu-partner img {
+  width: 300px;
+  border-radius: 1%;
+}
+
+.contact-us{
+  padding: 100px 0 100px 0;
+  background-size: cover;
+  /* background-image: linear-gradient(rgb(255, 255, 255), #374547); */
+  color: rgb(3, 2, 2);
+}
+.contact-us .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-us .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.contact-us .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+  padding-right: 20px;
+}
+.content .right-side .topic-text{
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #323537;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #504f52;
+}
+
+/* BATAS CLASS BODY 2 */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* CLASS FOOTER */
+footer {
+  background-color: rgba(34, 49, 52, 0.9);
+  height: 300px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+footer img {
+  width: 250px;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 20px;
+}
+/* BATAS CLASS FOOTER */

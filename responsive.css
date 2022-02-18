@@ -1,0 +1,176 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+
+    .header-logo{
+        width: 200px;
+        margin-top: -65px;
+    }
+    .header-menu {
+        margin-right: 15px;
+    }
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+    .main h1 {
+        font-size: 30px;
+    }
+
+    .main p {
+        padding: 0 80px 0 80px;
+        text-align: justify;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .main img{
+        width: 75%;
+    }
+
+/* ---------------------------------------------------------------------------------------------------------- */ 
+    
+    .body1 h1 {
+        font-size: 30px;
+    }
+
+    .body1 p {
+        font-size: 14px;
+    }
+    .body1 img{
+        width: 45%;
+    }
+    .body1-column {
+        width: 50%;
+        margin-bottom: 20px;
+    } 
+
+    .body1-2 h1 {
+        font-size: 30px;
+    }
+
+    .body1-2 p {
+        font-size: 14px;
+    }
+    .body1-2 img{
+        width: 60%;
+    }
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+    .body2{
+        width: 100%;
+        padding: 30px 40px 40px 35px ;
+    }
+    .partner-list{
+        display: block;
+    }
+    .colom{
+       text-align: center;
+    }
+    .contact-us{
+        width: 97%;
+        padding: 30px 40px 40px 35px ;
+    }
+    .contact-us .content .right-side{
+       width: 75%;
+       margin-left: 55px;
+    }
+
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+
+
+    .header-menu{
+        display:none;
+    }
+      
+    .menu-icon{
+      display:block;
+      margin-top: 20px;
+    }
+
+/* ---------------------------------------------------------------------------------------------------------- */    
+    
+    .main h1 {
+        font-size: 22px;
+        line-height: 34px;
+    }
+      
+    .main p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .main img{
+        width: 75%;
+    }
+
+    .btn-main {
+        margin-top: 10px;
+        width: 70%;
+    }
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+    .body1 h1 {
+        font-size: 22px;
+    }
+    .body1 p {
+        font-size: 12px;
+    }
+    .body1 img{
+        width: 25%;
+    }
+    .body1-column {
+        width: 100%;
+    }
+    .body1-2 h1 {
+        font-size: 22px;
+    }
+    .body1-2 p {
+        font-size: 12px;
+    }
+    .body1-2 img{
+        width: 40%;
+    }
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+    .body2{
+        width: 100%;
+        padding: 30px 40px 40px 35px ;
+    }
+    .partner-list{
+        display: block;
+    }
+    .colom{
+       text-align: center;
+    }
+    .contact-us{
+        margin: 40px 0;
+        height: 100%;
+        width: 100%;
+    }
+    .contact-us .content{
+        flex-direction: column-reverse;
+    }
+    .contact-us .content .left-side{
+       width: 100%;
+       flex-direction: row;
+       margin-top: 40px;
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+    .contact-usr .content .left-side::before{
+       display: none;
+    }
+    .contact-us .content .right-side{
+       width: 100%;
+       margin-left: 0;
+    }
+    
+/* ---------------------------------------------------------------------------------------------------------- */    
+    footer {
+        text-align: center;
+    }
+}
