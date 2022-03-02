@@ -17,7 +17,7 @@ body::-webkit-scrollbar { /* Chrome, Safari, Opera */
 
 h1, h2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 45px;
+  font-size: 45px; 
 }
 
 .container {
@@ -26,6 +26,16 @@ h1, h2 {
   padding: 0 20px;
 }
 
+#welcome-section h1 {
+  font-size: 70px;
+}
+
+#welcome-section p {
+  font-size:25px;
+  margin-top:-40px;
+  color:red;
+  
+}
 /*============= Header ===============*/
 #navbar {
     width: 100%;
@@ -50,7 +60,7 @@ h1, h2 {
     width: 15%;
 }
   
-
+}
 .nav-content .logo img{
     width: 10%;
 }
@@ -227,6 +237,9 @@ footer .footer-content .logo img{
   .nav-content .logo{
     width: 10%;
   }
+  #contact ul li a {
+    margin-left:40px;
+  }
 }
 @media (min-width: 600px){
   .nav-content ul {
@@ -242,10 +255,16 @@ footer .footer-content .logo img{
   #projects .cards {
     grid-template-columns: 1fr 1fr;
   }
+  #contact ul li a {
+    margin-left:50px;
+  }
 }
 
 @media (min-width: 900px){
   #projects .cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  #contact ul li a {
+    margin:0;
   }
 }
