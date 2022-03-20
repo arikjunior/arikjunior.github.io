@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.1.0-web/css/fontawesome.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   </head>
   <body>
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
     <nav class="navbar">
       <div class="max-width">
         <div class="logo">
           <a href="#">My <span>Portfolio</span></a>
         </div>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home" class="menu-button">Home</a></li>
+          <li><a href="#about" class="menu-button">About</a></li>
+          <li><a href="#services" class="menu-button">Services</a></li>
+          <li><a href="#skills" class="menu-button">Skills</a></li>
+          <li><a href="#projects" class="menu-button">Projects</a></li>
+          <li><a href="#contact" class="menu-button">Contact</a></li>
         </ul>
         <div class="menu-button">
           <i class="fas fa-bars"></i>
@@ -35,13 +39,14 @@
         <div class="home-content">
           <div class="text-1">Hello, my name is</div>
           <div class="text-2">Dwi Syiamnuari</div>
-          <div class="text-3">And I'm a <span>Junior Web Developer</span></div>
+          <div class="text-3">And I'm a <span class="typing"></span></div>
           <a href="#">Hire me</a>
         </div>
       </div>
     </section>
+    <!-- Home end -->
 
-    <!-- about section start -->
+    <!-- About start -->
     <section class="about" id="about">
       <div class="max-width">
         <h2 class="title">About me</h2>
@@ -50,17 +55,18 @@
             <img src="img/profile-1.jpg" alt="p1" />
           </div>
           <div class="column right">
-            <div class="text">I'm Arik (<span>Junior Web Developer</span>)</div>
+            <div class="text">I'm Arik (<span class="typing-2"></span>)</div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas eius ex omnis voluptatum rem laudantium sapiente et! Eos iusto veritatis quisquam provident odio, id officiis placeat dolorum illum vel ratione aspernatur
-              ullam sequi, exercitationem dicta temporibus optio molestias animi hic quae vero. Nihil consectetur ex sed! Earum ipsam assumenda commodi officia sunt saepe? Ipsum debitis ex necessitatibus sint modi.
+              Hi! My name is Dwi Syiamnuari, i'm an Junior Web Developer, and i was born in Klungkung, Indonesia on 2 January 1998 and now i live in Singaraja. I'm FreshGraduate from Jember University majoring as Information Technology.
+              <br />I start Programming in 2016 and learning HTML, CSS, JS, and other similar things, and also doing some photo editing with Photoshop, video editing with Adobe Premiere, and Web Design. Take a look at my work and if you'd
+              like to discuss your project, please let me know.
             </p>
-            <a href="#">Download CV</a>
+            <a href="https://drive.google.com/file/d/1J0MmkAQjo-7H7yUz6cp9effsfRtv4_DD/view?usp=sharing" target="to-link">Download CV</a>
           </div>
         </div>
       </div>
     </section>
-    <!-- about section end -->
+    <!-- About end -->
 
     <!-- Services -->
     <section class="services" id="services">
@@ -69,21 +75,21 @@
         <div class="serv-content">
           <div class="card">
             <div class="box">
-              <i class="fas fa-paint-brush"></i>
+              <i class="fa fa-paint-brush"></i>
               <div class="text">Web Design</div>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolore magni pariatur reiciendis sequi quidem.</p>
             </div>
           </div>
           <div class="card">
             <div class="box">
-              <i class="fas fa-chart-line"></i>
+              <i class="fa fa-gear"></i>
               <div class="text">Build Website</div>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolore magni pariatur reiciendis sequi quidem.</p>
             </div>
           </div>
           <div class="card">
             <div class="box">
-              <i class="fas fa-code"></i>
+              <i class="fa fa-code"></i>
               <div class="text">Apps Design</div>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolore magni pariatur reiciendis sequi quidem.</p>
             </div>
@@ -93,7 +99,7 @@
     </section>
     <!-- Services End-->
 
-    <!-- skills section start -->
+    <!-- Skills  start -->
     <section class="skills" id="skills">
       <div class="max-width">
         <h2 class="title">My Skills</h2>
@@ -101,14 +107,11 @@
           <div class="column left">
             <div class="text">My creative skills & experiences.</div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas ex fugiat, asperiores facere, architecto eius laborum magnam nostrum saepe, nisi enim ratione? Ducimus, voluptatem inventore sint sit quidem ut odit
-              dolorum tempora delectus. Placeat, veniam sunt facilis alias vero tenetur asperiores natus magnam consectetur modi veritatis adipisci velit illum deleniti esse, rem cupiditate debitis id, aut libero quos itaque? Laboriosam
-              adipisci minima voluptatem. Commodi ipsum vel asperiores optio molestiae quidem similique assumenda. Laudantium eveniet autem dignissimos illo quo libero doloribus architecto quos fugit possimus, accusantium molestiae id ex
-              quam. Reprehenderit voluptatum ut aut nobis odit ullam dolor eaque dolorum asperiores itaque corrupti, quos minus reiciendis totam eius nesciunt consequuntur ad voluptas obcaecati dolores? Temporibus quaerat sint minima vero.
-              Itaque praesentium aut reprehenderit asperiores ea beatae magni, quo iure facilis voluptates pariatur similique cumque! Porro, repellat necessitatibus perferendis quibusdam molestias, reprehenderit enim saepe dicta aliquam
-              quis, labore debitis voluptate eos.
+              Build a landing page company and some portfolio using Html, CSS, Bootstrap (Responsive); Create an article site using laravel framework; Working on some small projects using PHP; Creating an aquascape maintenance automation
+              system when working on a thesis with Arduino Uno; build a telegram chatbot connected across multiple APIs using NodeJs; Create posters and logos at an event and also edit cinematic videos using Adobe Premiere. <br />
+              Of course it's all still helped by tutorials on the internet I want to be a better person by doing something, that's why I often take online courses to gain more experience and knowledge.
             </p>
-            <a href="#">Read more</a>
+            <a href="https://drive.google.com/drive/folders/1XOC9aqSy-PnItVaMZdCdIoDu27j9sIs1?usp=sharing" target="to-link">Certificate</a>
           </div>
           <div class="column right">
             <div class="bars">
@@ -192,7 +195,7 @@
         </div>
       </div>
     </section>
-    <!-- skills section end -->
+    <!-- skills end -->
 
     <!-- projects start -->
     <section class="projects" id="projects">
@@ -245,6 +248,7 @@
       </div>
     </section>
     <!-- projects end -->
+
     <!-- contact start -->
     <section class="contact" id="contact">
       <div class="max-width">
@@ -280,22 +284,22 @@
           <div class="column right">
             <div class="text">Message me</div>
             <form action="#">
-              <div class="field">
+              <div class="fields">
                 <div class="field name">
                   <input type="text" placeholder="Name" required />
                 </div>
                 <div class="field email">
                   <input type="email" placeholder="Email" required />
                 </div>
-                <div class="field">
-                  <input type="text" placeholder="Subject" required />
-                </div>
-                <div class="field textarea">
-                  <textarea cols="30" rows="10" placeholder="Describe projects.." required></textarea>
-                </div>
-                <div class="button">
-                  <button type="submit">Send message</button>
-                </div>
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Subject" required />
+              </div>
+              <div class="field textarea">
+                <textarea cols="30" rows="10" placeholder="Describe projects.." required></textarea>
+              </div>
+              <div class="button">
+                <button type="submit">Send message</button>
               </div>
             </form>
           </div>
@@ -303,8 +307,18 @@
       </div>
     </section>
     <!-- contact end -->
+
+    <!-- footer start -->
+    <footer>
+      <span>Created By <a href="https://www.instagram.com/arikjunior/" target="to-link">Arik</a> | <span class="far fa-copyright"></span>2022 All rights reserved.</span>
+    </footer>
+
+    <!-- footer end -->
+
+    <!-- script -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="script.js"></script>
