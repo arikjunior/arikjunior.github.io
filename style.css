@@ -131,12 +131,15 @@ section {
 }
 .about,
 .services,
-.skills {
+.skills,
+.projects,
+.contact {
   font-family: "Poppins", sans-serif;
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content {
+.skills .skills-content,
+.contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -228,14 +231,17 @@ section .title::after {
 /* about section styling end */
 
 /* services styling start */
-.services {
+.services,
+.projects {
   color: white;
   background: #111;
 }
-.services .title::before {
+.services .title::before,
+.projects .title::before {
   background: white;
 }
-.services .title::after {
+.services .title::after,
+.projects .title::after {
   background: #111;
   content: "what i can";
 }
@@ -366,6 +372,114 @@ section .title::after {
 }
 
 /* skills styling end */
+
+/* projects styling start */
+.projects .title::after {
+  content: "what i made";
+}
+.projects .carousel .card {
+  background: #222;
+  border-radius: 10px;
+  /* height: ; */
+  padding: 25px 35px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.projects .carousel .card:hover {
+  background: #887528;
+}
+
+.projects .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.projects .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+.projects .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.projects .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #887528;
+}
+.projects .carousel .card:hover img {
+  border-color: white;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid #887528 !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: #887528 !important;
+}
+
+/* projects styling end */
+
+/* contact stylin start */
+.contact .title::after {
+  content: "get in touch";
+}
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p {
+  text-align: justify;
+}
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: #887528;
+}
+
+.contact .contact-content .info .head {
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title {
+  color: #333;
+}
+
+/* contact stylin end */
 
 /* responsive media query */
 @media (max-width: 1300px) {
