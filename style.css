@@ -9,14 +9,14 @@
 html {
   scroll-behavior: smooth;
 }
-.max-width {
+.max-width2 {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
 
-/* navbar styling */
-.navbar {
+/* navbar2 styling */
+.navbar2 {
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -25,38 +25,38 @@ html {
   transition: all 0.3s ease;
 }
 
-.navbar.sticky {
+.navbar2.sticky2 {
   padding: 15px 0;
   background: black;
 }
 
-.navbar .max-width {
+.navbar2 .max-width2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar .logo a {
+.navbar2 .logo2 a {
   color: white;
   font-size: 35px;
   font-weight: 600;
 }
 
-.navbar .logo a span {
+.navbar2 .logo2 a span {
   color: #887528;
   transition: all 0.3s ease;
 }
 
-.navbar.sticky .logo a span {
+.navbar2.sticky2 .logo2 a span {
   color: white;
 }
 
-.navbar .menu li {
+.navbar2 .menu2 li {
   list-style: none;
   display: inline-block;
 }
 
-.navbar .menu li a {
+.navbar2 .menu2 li a {
   display: block;
   color: white;
   font-size: 18px;
@@ -65,11 +65,11 @@ html {
   transition: color 0.3s ease;
 }
 
-.navbar .menu li a:hover {
+.navbar2 .menu2 li a:hover {
   color: #887528;
 }
 
-/* End Navbar */
+/* End Navbar2 */
 
 /* menu btn styling */
 .menu-button {
@@ -109,7 +109,7 @@ html {
 /* scroll up btn end */
 
 /* Home styling */
-.home {
+.home2 {
   display: flex;
   background: url(img/banner4.jpg) no-repeat center;
   height: 100vh;
@@ -118,28 +118,28 @@ html {
   font-family: "Ubuntu", sans-serif;
 }
 
-.home .max-width {
+.home2 .max-width2 {
   margin: auto 0 auto 40px;
 }
 
-.home .home-content .text-1 {
+.home2 .home-content .text-1 {
   font-size: 27px;
 }
-.home .home-content .text-2 {
+.home2 .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
-.home .home-content .text-3 {
+.home2 .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
-.home .home-content .text-3 span {
+.home2 .home-content .text-3 span {
   color: #887528;
   font-weight: 500;
 }
 
-.home .home-content a {
+.home2 .home-content a {
   display: inline-block;
   background: #887528;
   color: white;
@@ -151,7 +151,7 @@ html {
   transition: all 0.3s ease;
 }
 
-.home .home-content a:hover {
+.home2 .home-content a:hover {
   color: #887528;
   background: none;
 }
@@ -213,35 +213,35 @@ section .title::after {
   content: "who i am";
 }
 
-.about .about-content .left {
+.about .about-content .left2 {
   width: 45%;
 }
-.about .about-content .left img {
+.about .about-content .left2 img {
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.about .about-content .right {
+.about .about-content .right2 {
   width: 55%;
 }
 
-.about .about-content .right .text {
+.about .about-content .right2 .text2 {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.about .about-content .right .text span {
+.about .about-content .right2 .text2 span {
   color: #887528;
 }
 
-.about .about-content .right p {
+.about .about-content .right2 p {
   text-align: justify;
 }
 
-.about .about-content .right a {
+.about .about-content .right2 a {
   display: inline-block;
   background: #887528;
   color: white;
@@ -254,7 +254,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.about .about-content .right a:hover {
+.about .about-content .right2 a:hover {
   color: #887528;
   background: none;
 }
@@ -276,7 +276,7 @@ section .title::after {
   background: #111;
   content: "what i can";
 }
-.services .serv-content .card {
+.services .serv-content .card2 {
   width: calc(33% - 20px);
   background-color: #222;
   text-align: center;
@@ -284,26 +284,26 @@ section .title::after {
   padding: 20px 25px;
   cursor: pointer;
 }
-.services .serv-content .card:hover {
+.services .serv-content .card2:hover {
   background: #887528;
 }
-.services .serv-content .card .box {
+.services .serv-content .card2 .box2 {
   transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box {
+.services .serv-content .card2:hover .box2 {
   transform: scale(1.05);
 }
 
-.services .serv-content .card i {
+.services .serv-content .card2 i {
   font-size: 50px;
   color: #887528;
   transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i {
+.services .serv-content .card2:hover i {
   color: white;
 }
 
-.services .serv-content .card .text {
+.services .serv-content .card2 .text2 {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
@@ -314,18 +314,18 @@ section .title::after {
 .skills .title::after {
   content: "what i know";
 }
-.skills .skills-content .column {
+.skills .skills-content .column2 {
   width: calc(50% - 30px);
 }
-.skills .skills-content .left .text {
+.skills .skills-content .left2 .text2 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.skills .skills-content .left p {
+.skills .skills-content .left2 p {
   text-align: justify;
 }
-.skills .skills-content .left a {
+.skills .skills-content .left2 a {
   display: inline-block;
   background: #887528;
   color: white;
@@ -337,30 +337,30 @@ section .title::after {
   border: 2px solid #887528;
   transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover {
+.skills .skills-content .left2 a:hover {
   background: none;
   color: #887528;
 }
-.skills .skills-content .right .bars {
+.skills .skills-content .right2 .bars2 {
   margin-bottom: 15px;
 }
-.skills .skills-content .right .info {
+.skills .skills-content .right2 .info2 {
   display: flex;
   margin-bottom: 5px;
   align-items: center;
   justify-content: space-between;
 }
-.skills .skills-content .right span {
+.skills .skills-content .right2 span {
   font-weight: 500;
   font-size: 18px;
 }
-.skills .skills-content .right .line {
+.skills .skills-content .right2 .line2 {
   height: 5px;
   width: 100%;
   background: rgb(192, 183, 183);
   position: relative;
 }
-.skills .skills-content .right .line::before {
+.skills .skills-content .right2 .line2::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -368,37 +368,37 @@ section .title::after {
   top: 0;
   background: crimson;
 }
-.skills-content .right .html::before {
+.skills-content .right2 .html::before {
   width: 85%;
 }
-.skills-content .right .css::before {
+.skills-content .right2 .css::before {
   width: 70%;
 }
-.skills-content .right .js::before {
+.skills-content .right2 .js::before {
   width: 55%;
 }
-.skills-content .right .php::before {
+.skills-content .right2 .php::before {
   width: 65%;
 }
-.skills-content .right .nodejs::before {
+.skills-content .right2 .nodejs::before {
   width: 50%;
 }
-.skills-content .right .mysql::before {
+.skills-content .right2 .mysql::before {
   width: 75%;
 }
-.skills-content .right .bootstrap::before {
+.skills-content .right2 .bootstrap::before {
   width: 70%;
 }
-.skills-content .right .laravel::before {
+.skills-content .right2 .laravel::before {
   width: 70%;
 }
-.skills-content .right .premiere::before {
+.skills-content .right2 .premiere::before {
   width: 85%;
 }
-.skills-content .right .photoshop::before {
+.skills-content .right2 .photoshop::before {
   width: 80%;
 }
-.skills-content .right .msoffice::before {
+.skills-content .right2 .msoffice::before {
   width: 80%;
 }
 
@@ -408,7 +408,7 @@ section .title::after {
 .projects .title::after {
   content: "what i made";
 }
-.projects .carousel .card {
+.projects .carousel .card2 {
   background: #222;
   border-radius: 10px;
   /* height: ; */
@@ -416,33 +416,33 @@ section .title::after {
   text-align: center;
   transition: all 0.3s ease;
 }
-.projects .carousel .card:hover {
+.projects .carousel .card2:hover {
   background: #887528;
 }
 
-.projects .carousel .card .box {
+.projects .carousel .card2 .box2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
-.projects .carousel .card:hover .box {
+.projects .carousel .card2:hover .box2 {
   transform: scale(1.05);
 }
-.projects .carousel .card .text {
+.projects .carousel .card2 .text2 {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-.projects .carousel .card img {
+.projects .carousel .card2 img {
   height: 150px;
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #887528;
 }
-.projects .carousel .card:hover img {
+.projects .carousel .card2:hover img {
   border-color: white;
 }
 
@@ -475,61 +475,61 @@ section .title::after {
 .contact .title::after {
   content: "get in touch";
 }
-.contact .contact-content .column {
+.contact .contact-content .column2 {
   width: calc(50% - 30px);
 }
-.contact .contact-content .text {
+.contact .contact-content .text2 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.contact .contact-content .left p {
+.contact .contact-content .left2 p {
   text-align: justify;
 }
-.contact .contact-content .left .icons {
+.contact .contact-content .left2 .icons2 {
   margin: 10px 0;
 }
-.contact .contact-content .row {
+.contact .contact-content .row2 {
   display: flex;
   height: 65px;
   align-items: center;
 }
-.contact .contact-content .row .info {
+.contact .contact-content .row2 .info2 {
   margin-left: 30px;
 }
 
-.contact .contact-content .row i {
+.contact .contact-content .row2 i {
   font-size: 25px;
   color: #887528;
 }
 
-.contact .contact-content .info .head {
+.contact .contact-content .info2 .head2 {
   font-weight: 500;
 }
-.contact .contact-content .info .sub-title {
+.contact .contact-content .info2 .sub-title {
   color: #333;
 }
-.contact .right form .fields {
+.contact .right2 form .fields2 {
   display: flex;
 }
-.contact .right form .field,
-.contact .right form .fields .field {
+.contact .right2 form .field2,
+.contact .right2 form .fields2 .field2 {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
 }
-.contact .right form .textarea {
+.contact .right2 form .textarea2 {
   height: 80px;
   width: 100%;
 }
-.contact .right form .name {
+.contact .right2 form .name2 {
   margin-right: 10px;
 }
-.contact .right form .email {
+.contact .right2 form .email2 {
   margin-left: 10px;
 }
-.contact .right form .field input,
-.contact .right form .textarea textarea {
+.contact .right2 form .field2 input,
+.contact .right2 form .textarea2 textarea {
   height: 100%;
   width: 100%;
   border: 1px solid lightgrey;
@@ -540,15 +540,15 @@ section .title::after {
   font-family: "Poppins", sans-serif;
 }
 
-.contact .right form .textarea textarea {
+.contact .right2 form .textarea2 textarea {
   padding-top: 10px;
   resize: none;
 }
-.contact .right form .button {
+.contact .right2 form .button2 {
   height: 47px;
   width: 170px;
 }
-.contact .right form .button button {
+.contact .right2 form .button2 button {
   width: 100%;
   height: 100%;
   border: 2px solid #887528;
@@ -561,9 +561,44 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.contact .right form .button button:hover {
+.contact .right2 form .button2 button:hover {
   color: #887528;
   background: none;
+}
+.alert {
+  padding: 20px;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: 155724;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.buttonload {
+  background-color: #04aa6d; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 24px; /* Some padding */
+  font-size: 16px; /* Set a font-size */
+}
+
+/* Add a right margin to each icon */
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
 }
 /* contact stylin end */
 /* footer */
@@ -583,20 +618,20 @@ footer span a:hover {
 
 /* responsive media query */
 @media (max-width: 1300px) {
-  .home .max-width {
+  .home2 .max-width2 {
     margin-left: 0px;
   }
 }
 
 @media (max-width: 1104px) {
-  .about .about-content .left img {
+  .about .about-content .left2 img {
     height: 350px;
     width: 350px;
   }
 }
 
 @media (max-width: 991px) {
-  .max-width {
+  .max-width2 {
     padding: 0 50px;
   }
 }
@@ -611,7 +646,7 @@ footer span a:hover {
     content: "\f00d";
   }
 
-  .navbar .menu {
+  .navbar2 .menu2 {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -622,75 +657,75 @@ footer span a:hover {
     padding-top: 80px;
     transition: all 0.3s ease;
   }
-  .navbar .menu.active {
+  .navbar2 .menu2.active {
     left: 0;
   }
-  .navbar .menu li {
+  .navbar2 .menu2 li {
     display: block;
   }
-  .navbar .menu li a {
+  .navbar2 .menu2 li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
   }
-  .home .home-content .text-2 {
+  .home2 .home-content .text-2 {
     font-size: 60px;
   }
-  .home .home-content .text-3 {
+  .home2 .home-content .text-3 {
     font-size: 20px;
   }
-  .home .home-content a {
+  .home2 .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
-  .max-width {
+  .max-width2 {
     max-width: 800px;
   }
-  .about .about-content .column {
+  .about .about-content .column2 {
     width: 100%;
   }
-  .about .about-content .left {
+  .about .about-content .left2 {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
-  .about .about-content .right {
+  .about .about-content .right2 {
     flex: 100%;
   }
-  .services .serv-content .card {
+  .services .serv-content .card2 {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
-  .skills .skills-content .column,
-  .contact .contact-content .column {
+  .skills .skills-content .column2,
+  .contact .contact-content .column2 {
     width: 100%;
     margin-bottom: 35px;
   }
 }
 
 @media (max-width: 690px) {
-  .max-width {
+  .max-width2 {
     padding: 0 23px;
   }
-  .home .home-content .text-2 {
+  .home2 .home-content .text-2 {
     font-size: 55px;
   }
-  .home .home-content .text-3 {
+  .home2 .home-content .text-3 {
     font-size: 20px;
   }
-  .home .home-content a {
+  .home2 .home-content a {
     font-size: 20px;
   }
-  .services .serv-content .card {
+  .services .serv-content .card2 {
     width: 100%;
   }
 }
 
 @media (max-width: 500px) {
-  .home .home-content .text-2 {
+  .home2 .home-content .text-2 {
     font-size: 50px;
   }
-  .home .home-content .text-3 {
+  .home2 .home-content .text-3 {
     font-size: 16px;
   }
 }

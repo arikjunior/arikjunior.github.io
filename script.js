@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 20) {
-      $(".navbar").addClass("sticky");
+      $(".navbar2").addClass("sticky2");
     } else {
-      $(".navbar").removeClass("sticky");
+      $(".navbar2").removeClass("sticky2");
     }
     if (this.scrollY > 500) {
       $(".scroll-up-btn").addClass("show");
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
   // toggle menu navbar script
   $(".menu-button").click(function () {
-    $(".navbar .menu").toggleClass("active");
+    $(".navbar2 .menu2").toggleClass("active");
     $(".menu-button i").toggleClass("active");
   });
 
@@ -59,3 +59,43 @@ $(document).ready(function () {
     },
   });
 });
+
+// send message contact
+const scriptURL = "https://script.google.com/macros/s/AKfycbxmOY1PAKM1LE2RL3_yeuIiyB0q83pXOLKkMivjVmCHiNnRBWAn5SArDTmXowQRsEWlKw/exec";
+const form = document.forms["portfolio-form-contact"];
+// loading
+const btnKirim = document.querySelector(".btn-kirim");
+const btnLoading = document.querySelector(".btn-loading");
+const alert = document.querySelector(".alert");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  //ketika tombol submit di klik
+  // tampilkan tombol loading, hilangkan tombol kirim
+  // btnLoading.classList.toggle("d-none");
+  // btnKirim.classList.toggle("d-none");
+  btnLoading.style.display = btnLoading.style.display === "none" ? "" : "none";
+  btnKirim.style.display = btnKirim.style.display === "" ? "none" : "";
+  //
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      //tampilkan tombol kirim, hilangkan tombol loading
+      // btnLoading.classList.toggle("d-none");
+      // btnKirim.classList.toggle("d-none");
+      btnLoading.style.display = btnLoading.style.display === "none" ? "" : "none";
+      btnKirim.style.display = btnKirim.style.display === "" ? "none" : "";
+      // tampilkan alert
+      alert.style.display = alert.style.display === "none" ? "" : "none";
+
+      // reset form
+      form.reset();
+      console.log("Success!", response);
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+var x = document.getElementById("myDIV");
+if (x.style.display === "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
