@@ -94,7 +94,7 @@ html {
   color: white;
   z-index: 9999;
   font-size: 30px;
-  border-radius: 6px;
+  border-radius: 50%;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
@@ -177,40 +177,44 @@ footer {
   justify-content: space-between;
 }
 section .title {
-  position: relative;
   text-align: center;
   font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
 }
-
-section .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
+.divider-custom {
+  margin: 0.15rem 0 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-section .title::after {
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  font-size: 20px;
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 5rem;
+  height: 0.25rem;
+  background-color: #887528;
+  border-radius: 1rem;
+  border-color: #887528;
+}
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+.divider-custom .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+.divider-custom .divider-custom-icon {
   color: #887528;
-  padding: 5px;
-  background: white;
-  transform: translateX(-50%);
+  font-size: 2rem;
+}
+.divider-custom.divider-light .divider-custom-line {
+  background-color: #fff;
+}
+.divider-custom.divider-light .divider-custom-icon {
+  color: #fff;
 }
 /* about section styling */
 
 .about .title::after {
-  content: "who i am";
+  content: "";
 }
 
 .about .about-content .left2 {
@@ -274,7 +278,7 @@ section .title::after {
 .services .title::after,
 .projects .title::after {
   background: #111;
-  content: "what i can";
+  content: "";
 }
 .services .serv-content .card2 {
   width: calc(33% - 20px);
@@ -312,7 +316,7 @@ section .title::after {
 
 /* skills styling start */
 .skills .title::after {
-  content: "what i know";
+  content: "";
 }
 .skills .skills-content .column2 {
   width: calc(50% - 30px);
@@ -343,6 +347,10 @@ section .title::after {
 }
 .skills .skills-content .right2 .bars2 {
   margin-bottom: 15px;
+  overflow: hidden;
+}
+.skills .skills-content .right2 .bars2.show {
+  margin-bottom: 15px;
 }
 .skills .skills-content .right2 .info2 {
   display: flex;
@@ -368,45 +376,70 @@ section .title::after {
   top: 0;
   background: crimson;
 }
-.skills-content .right2 .html::before {
+
+@keyframes move-toRight {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.skills-content .right2.loading .html::before {
   width: 85%;
+  animation: move-toRight 3s ease;
 }
-.skills-content .right2 .css::before {
+
+.skills-content .right2.loading .css::before {
   width: 70%;
+  animation: move-toRight 3s ease;
 }
-.skills-content .right2 .js::before {
+.skills-content .right2.loading .js::before {
   width: 55%;
+  animation: move-toRight 3s ease;
 }
-.skills-content .right2 .php::before {
+.skills-content .right2.loading .php::before {
   width: 65%;
+  animation: move-toRight 3s ease;
 }
-.skills-content .right2 .nodejs::before {
+.skills-content .right2.loading .nodejs::before {
   width: 50%;
+  animation: move-toRight 3s ease;
 }
-.skills-content .right2 .mysql::before {
+.skills-content .right2.loading .mysql::before {
   width: 75%;
+  animation: move-toRight 3s ease;
 }
-.skills-content .right2 .bootstrap::before {
+.skills-content .right2.loading .bootstrap::before {
   width: 70%;
+  animation: move-toRight 3s ease;
 }
-.skills-content .right2 .laravel::before {
+.skills-content .right2.loading .laravel::before {
   width: 70%;
+  animation: move-toRight 3s ease;
 }
-.skills-content .right2 .premiere::before {
+.skills-content .right2.loading .premiere::before {
   width: 85%;
+  animation: move-toRight 3s ease;
 }
-.skills-content .right2 .photoshop::before {
+.skills-content .right2.loading .photoshop::before {
   width: 80%;
+  animation: move-toRight 3s ease;
 }
-.skills-content .right2 .msoffice::before {
+.skills-content .right2.loading .msoffice::before {
   width: 80%;
+  animation: move-toRight 3s ease;
 }
+/*  */
+
+/*  */
 
 /* skills styling end */
 
 /* projects styling start */
 .projects .title::after {
-  content: "what i made";
+  content: "";
 }
 .projects .carousel .card2 {
   background: #222;
@@ -472,9 +505,12 @@ section .title::after {
 /* projects styling end */
 
 /* contact stylin start */
-.contact .title::after {
-  content: "get in touch";
+.contact .title ::after {
+  content: "";
 }
+/* .contact .title i {
+  padding-top: 500px;
+} */
 .contact .contact-content .column2 {
   width: calc(50% - 30px);
 }

@@ -10,6 +10,11 @@ $(document).ready(function () {
     } else {
       $(".scroll-up-btn").removeClass("show");
     }
+    if (this.scrollY > 1900) {
+      $(".right2").addClass("loading");
+    } else {
+      $(".right2").removeClass("loading");
+    }
   });
   // slide-up script
   $(".scroll-up-btn").click(function () {
@@ -23,8 +28,9 @@ $(document).ready(function () {
   });
 
   // typing animation
+  // Hire me if you think i'm fit for your job
   var typed = new Typed(".typing", {
-    strings: ["Junior Web Developer", "Junior Frontend", "Junior Backend", "Designer", "IT Support"],
+    strings: ["Welcome to my web portfolio", ""],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -93,9 +99,3 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
-var x = document.getElementById("myDIV");
-if (x.style.display === "none") {
-  x.style.display = "block";
-} else {
-  x.style.display = "none";
-}
