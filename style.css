@@ -417,48 +417,48 @@ section .title {
 
 .skills-content .right2.loading .html::before {
   width: 85%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 
 .skills-content .right2.loading .css::before {
   width: 70%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 .skills-content .right2.loading .js::before {
   width: 55%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 .skills-content .right2.loading .php::before {
   width: 65%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 .skills-content .right2.loading .nodejs::before {
   width: 50%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 .skills-content .right2.loading .mysql::before {
   width: 75%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 .skills-content .right2.loading .bootstrap::before {
   width: 70%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 .skills-content .right2.loading .laravel::before {
   width: 70%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 .skills-content .right2.loading .premiere::before {
   width: 85%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 .skills-content .right2.loading .photoshop::before {
   width: 80%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 .skills-content .right2.loading .msoffice::before {
   width: 80%;
-  animation: move-toRight 3s ease;
+  animation: move-toRight 5s ease;
 }
 /*  */
 
