@@ -611,11 +611,7 @@ a.lightbox-close:after {
   max-height: 80%;
   max-width: 80%;
 }
-.lightbox-target:target img:hover {
-  -ms-transform: scale(0.8); /* IE 9 */
-  -webkit-transform: scale(0.8); /* Safari 3-8 */
-  transform: scale(0.8);
-}
+
 input[type="checkbox"] {
   display: none;
 }
