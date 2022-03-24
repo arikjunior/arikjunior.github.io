@@ -65,6 +65,27 @@ $(document).ready(function () {
     },
   });
 });
+// hide when click image project
+function myFunction() {
+  var x = document.getElementById("hide");
+  var y = document.getElementById("hide2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("hide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+//
 
 // send message contact
 const scriptURL = "https://script.google.com/macros/s/AKfycbxmOY1PAKM1LE2RL3_yeuIiyB0q83pXOLKkMivjVmCHiNnRBWAn5SArDTmXowQRsEWlKw/exec";

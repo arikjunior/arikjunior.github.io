@@ -9,6 +9,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .max-width2 {
   max-width: 1300px;
   padding: 0 80px;
@@ -99,6 +100,7 @@ html {
 .scroll-up-btn:hover {
   color: black;
   border-color: black;
+  text-shadow: 1px 1px 0px #fff;
 }
 
 .scroll-up-btn::before {
@@ -144,6 +146,8 @@ html {
   height: 100vh;
   color: white;
   min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -478,6 +482,7 @@ section .title {
   text-align: center;
   transition: all 0.3s ease;
 }
+
 .projects .carousel .card2:hover {
   background: #887528;
 }
@@ -489,13 +494,18 @@ section .title {
   justify-content: center;
   transition: all 0.3s ease;
 }
+
 .projects .carousel .card2:hover .box2 {
   transform: scale(1.05);
 }
 .projects .carousel .card2 .text2 {
   font-size: 25px;
   font-weight: 500;
+  color: white;
   margin: 10px 0 7px 0;
+}
+.projects .carousel .card2 p {
+  color: white;
 }
 .projects .carousel .card2 img {
   height: 150px;
@@ -508,6 +518,123 @@ section .title {
   border-color: white;
 }
 
+/*  */
+/*  */
+/*  */
+
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: #ffffff;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+a.lightbox-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  position: absolute;
+  top: -80px;
+  right: 40px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: #000000;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: #000000;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+
+.lightbox-target:target img {
+  max-height: 80%;
+  max-width: 80%;
+}
+.lightbox-target:target img:hover {
+  -ms-transform: scale(0.8); /* IE 9 */
+  -webkit-transform: scale(0.8); /* Safari 3-8 */
+  transform: scale(0.8);
+}
+input[type="checkbox"] {
+  display: none;
+}
+.lightbox-target:target img {
+  margin: auto;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+input[type="checkbox"]:checked ~ label > img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+.lightbox-target:target a.lightbox-close {
+  top: 80px;
+}
+/*  */
+/*  */
+/*  */
 .owl-dots {
   text-align: center;
   margin-top: 20px;
@@ -733,6 +860,7 @@ footer span a:hover {
     margin: 20px 0;
     font-size: 25px;
   }
+
   .home2 .home-content .text-2 {
     font-size: 60px;
   }
