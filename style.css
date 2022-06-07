@@ -491,7 +491,7 @@ section .title {
 }
 
 .skills-content .right2.loading .js::before {
-  width: 55%;
+  width: 65%;
   animation: move-toRight 5s ease;
 }
 
@@ -517,6 +517,16 @@ section .title {
 
 .skills-content .right2.loading .laravel::before {
   width: 70%;
+  animation: move-toRight 5s ease;
+}
+
+.skills-content .right2.loading .reactjs::before {
+  width: 60%;
+  animation: move-toRight 5s ease;
+}
+
+.skills-content .right2.loading .vuejs::before {
+  width: 60%;
   animation: move-toRight 5s ease;
 }
 
