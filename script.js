@@ -30,7 +30,8 @@ $(document).ready(function () {
   // typing animation
   // Hire me if you think i'm fit for your job
   var typed = new Typed(".typing", {
-    strings: ["Welcome to my web portfolio", ""],
+    // strings: ["Welcome to my web portfolio", ""],
+    strings: ["Junior Web Developer", "Junior Frontend", "Junior Backend", "Designer", "IT Support"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -43,27 +44,7 @@ $(document).ready(function () {
     loop: true,
   });
 
-  // owl carousel script
-  $(".carousel").owlCarousel({
-    margin: 20,
-    loop: true,
-    autoplayTimeOut: 2000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false,
-      },
-      600: {
-        items: 2,
-        nav: false,
-      },
-      1000: {
-        items: 3,
-        nav: false,
-      },
-    },
-  });
+
 });
 // hide when click image project
 function myFunction() {
@@ -119,4 +100,26 @@ form.addEventListener("submit", (e) => {
       console.log("Success!", response);
     })
     .catch((error) => console.error("Error!", error.message));
+});
+
+// owl carousel script
+$(".carousel").owlCarousel({
+  margin: 20,
+  loop: true,
+  autoplayTimeOut: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+    },
+    600: {
+      items: 2,
+      nav: false,
+    },
+    1000: {
+      items: 3,
+      nav: false,
+    },
+  },
 });

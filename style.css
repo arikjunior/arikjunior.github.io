@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -97,6 +98,7 @@ html {
   pointer-events: none;
   transition: all 0.3s ease;
 }
+
 .scroll-up-btn:hover {
   color: black;
   border-color: black;
@@ -121,6 +123,7 @@ html {
   border-color: inherit;
   transition: transform 0.5s ease-in;
 }
+
 .scroll-up-btn::after {
   content: "Back to top";
   font-size: 15px;
@@ -128,6 +131,7 @@ html {
   left: 5px;
   top: 28px;
 }
+
 .scroll-up-btn:hover:before {
   transform: rotate(360deg);
 }
@@ -151,6 +155,17 @@ html {
   font-family: "Ubuntu", sans-serif;
 }
 
+.animation {
+  letter-spacing: 3px;
+  text-shadow: red 0 0, cyan 0 0;
+  transition: text-shadow 300ms;
+}
+
+.animation:hover {
+  text-shadow: red -6px 0, cyan 6px 0;
+  font-style: italic;
+}
+
 .home2 .max-width2 {
   margin: auto 0 auto 40px;
 }
@@ -158,15 +173,18 @@ html {
 .home2 .home-content .text-1 {
   font-size: 27px;
 }
+
 .home2 .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
+
 .home2 .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
+
 .home2 .home-content .text-3 span {
   color: #887528;
   font-weight: 500;
@@ -188,10 +206,12 @@ html {
   color: #887528;
   background: none;
 }
+
 /* semua kode yang sama */
 section {
   padding: 100px 0;
 }
+
 .about,
 .services,
 .skills,
@@ -200,6 +220,7 @@ section {
 footer {
   font-family: "Poppins", sans-serif;
 }
+
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
@@ -209,10 +230,12 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+
 section .title {
   text-align: center;
   font-size: 40px;
 }
+
 .divider-custom {
   margin: 0.15rem 0 2.5rem;
   width: 100%;
@@ -220,6 +243,7 @@ section .title {
   justify-content: center;
   align-items: center;
 }
+
 .divider-custom .divider-custom-line {
   width: 100%;
   max-width: 5rem;
@@ -228,22 +252,28 @@ section .title {
   border-radius: 1rem;
   border-color: #887528;
 }
+
 .divider-custom .divider-custom-line:first-child {
   margin-right: 1rem;
 }
+
 .divider-custom .divider-custom-line:last-child {
   margin-left: 1rem;
 }
+
 .divider-custom .divider-custom-icon {
   color: #887528;
   font-size: 2rem;
 }
+
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
 }
+
 .divider-custom.divider-light .divider-custom-icon {
   color: #fff;
 }
+
 /* about section styling */
 
 .about .title::after {
@@ -253,6 +283,17 @@ section .title {
 .about .about-content .left2 {
   width: 45%;
 }
+
+.imageanimation {
+  animation: hue-rotate 2s alternate infinite;
+}
+
+@keyframes hue-rotate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 .about .about-content .left2 img {
   height: 400px;
   width: 400px;
@@ -304,15 +345,18 @@ section .title {
   color: white;
   background: #111;
 }
+
 .services .title::before,
 .projects .title::before {
   background: white;
 }
+
 .services .title::after,
 .projects .title::after {
   background: #111;
   content: "";
 }
+
 .services .serv-content .card2 {
   width: calc(33% - 20px);
   background-color: #222;
@@ -321,12 +365,15 @@ section .title {
   padding: 20px 25px;
   cursor: pointer;
 }
+
 .services .serv-content .card2:hover {
   background: #887528;
 }
+
 .services .serv-content .card2 .box2 {
   transition: all 0.3s ease;
 }
+
 .services .serv-content .card2:hover .box2 {
   transform: scale(1.05);
 }
@@ -336,6 +383,7 @@ section .title {
   color: #887528;
   transition: color 0.3s ease;
 }
+
 .services .serv-content .card2:hover i {
   color: white;
 }
@@ -345,23 +393,28 @@ section .title {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+
 /* services styling end */
 
 /* skills styling start */
 .skills .title::after {
   content: "";
 }
+
 .skills .skills-content .column2 {
   width: calc(50% - 30px);
 }
+
 .skills .skills-content .left2 .text2 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .skills .skills-content .left2 p {
   text-align: justify;
 }
+
 .skills .skills-content .left2 a {
   display: inline-block;
   background: #887528;
@@ -374,33 +427,40 @@ section .title {
   border: 2px solid #887528;
   transition: all 0.3s ease;
 }
+
 .skills .skills-content .left2 a:hover {
   background: none;
   color: #887528;
 }
+
 .skills .skills-content .right2 .bars2 {
   margin-bottom: 15px;
   overflow: hidden;
 }
+
 .skills .skills-content .right2 .bars2.show {
   margin-bottom: 15px;
 }
+
 .skills .skills-content .right2 .info2 {
   display: flex;
   margin-bottom: 5px;
   align-items: center;
   justify-content: space-between;
 }
+
 .skills .skills-content .right2 span {
   font-weight: 500;
   font-size: 18px;
 }
+
 .skills .skills-content .right2 .line2 {
   height: 5px;
   width: 100%;
   background: rgb(192, 183, 183);
   position: relative;
 }
+
 .skills .skills-content .right2 .line2::before {
   content: "";
   position: absolute;
@@ -414,6 +474,7 @@ section .title {
   0% {
     transform: translateX(-500px);
   }
+
   100% {
     transform: translateX(0px);
   }
@@ -428,42 +489,52 @@ section .title {
   width: 70%;
   animation: move-toRight 5s ease;
 }
+
 .skills-content .right2.loading .js::before {
   width: 55%;
   animation: move-toRight 5s ease;
 }
+
 .skills-content .right2.loading .php::before {
   width: 65%;
   animation: move-toRight 5s ease;
 }
+
 .skills-content .right2.loading .nodejs::before {
   width: 50%;
   animation: move-toRight 5s ease;
 }
+
 .skills-content .right2.loading .mysql::before {
   width: 75%;
   animation: move-toRight 5s ease;
 }
+
 .skills-content .right2.loading .bootstrap::before {
   width: 70%;
   animation: move-toRight 5s ease;
 }
+
 .skills-content .right2.loading .laravel::before {
   width: 70%;
   animation: move-toRight 5s ease;
 }
+
 .skills-content .right2.loading .premiere::before {
   width: 85%;
   animation: move-toRight 5s ease;
 }
+
 .skills-content .right2.loading .photoshop::before {
   width: 80%;
   animation: move-toRight 5s ease;
 }
+
 .skills-content .right2.loading .msoffice::before {
   width: 80%;
   animation: move-toRight 5s ease;
 }
+
 /*  */
 
 /*  */
@@ -474,6 +545,7 @@ section .title {
 .projects .title::after {
   content: "";
 }
+
 .projects .carousel .card2 {
   background: #222;
   border-radius: 10px;
@@ -498,15 +570,18 @@ section .title {
 .projects .carousel .card2:hover .box2 {
   transform: scale(1.05);
 }
+
 .projects .carousel .card2 .text2 {
   font-size: 25px;
   font-weight: 500;
   color: white;
   margin: 10px 0 7px 0;
 }
+
 .projects .carousel .card2 p {
   color: white;
 }
+
 .projects .carousel .card2 img {
   height: 150px;
   width: 150px;
@@ -514,6 +589,7 @@ section .title {
   border-radius: 50%;
   border: 5px solid #887528;
 }
+
 .projects .carousel .card2:hover img {
   border-color: white;
 }
@@ -615,12 +691,14 @@ a.lightbox-close:after {
 input[type="checkbox"] {
   display: none;
 }
+
 .lightbox-target:target img {
   margin: auto;
   transition: transform 0.25s ease;
   cursor: zoom-in;
 }
-input[type="checkbox"]:checked ~ label > img {
+
+input[type="checkbox"]:checked~label>img {
   transform: scale(2);
   cursor: zoom-out;
 }
@@ -628,6 +706,7 @@ input[type="checkbox"]:checked ~ label > img {
 .lightbox-target:target a.lightbox-close {
   top: 80px;
 }
+
 /*  */
 /*  */
 /*  */
@@ -635,6 +714,7 @@ input[type="checkbox"]:checked ~ label > img {
   text-align: center;
   margin-top: 20px;
 }
+
 .owl-dot {
   height: 13px;
   width: 13px;
@@ -649,6 +729,7 @@ input[type="checkbox"]:checked ~ label > img {
   width: 35px;
   border-radius: 14px;
 }
+
 .owl-dot.active,
 .owl-dot:hover {
   background: #887528 !important;
@@ -660,28 +741,34 @@ input[type="checkbox"]:checked ~ label > img {
 .contact .title ::after {
   content: "";
 }
+
 /* .contact .title i {
   padding-top: 500px;
 } */
 .contact .contact-content .column2 {
   width: calc(50% - 30px);
 }
+
 .contact .contact-content .text2 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .contact .contact-content .left2 p {
   text-align: justify;
 }
+
 .contact .contact-content .left2 .icons2 {
   margin: 10px 0;
 }
+
 .contact .contact-content .row2 {
   display: flex;
   height: 65px;
   align-items: center;
 }
+
 .contact .contact-content .row2 .info2 {
   margin-left: 30px;
 }
@@ -694,28 +781,35 @@ input[type="checkbox"]:checked ~ label > img {
 .contact .contact-content .info2 .head2 {
   font-weight: 500;
 }
+
 .contact .contact-content .info2 .sub-title {
   color: #333;
 }
+
 .contact .right2 form .fields2 {
   display: flex;
 }
+
 .contact .right2 form .field2,
 .contact .right2 form .fields2 .field2 {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
 }
+
 .contact .right2 form .textarea2 {
   height: 80px;
   width: 100%;
 }
+
 .contact .right2 form .name2 {
   margin-right: 10px;
 }
+
 .contact .right2 form .email2 {
   margin-left: 10px;
 }
+
 .contact .right2 form .field2 input,
 .contact .right2 form .textarea2 textarea {
   height: 100%;
@@ -732,10 +826,12 @@ input[type="checkbox"]:checked ~ label > img {
   padding-top: 10px;
   resize: none;
 }
+
 .contact .right2 form .button2 {
   height: 47px;
   width: 170px;
 }
+
 .contact .right2 form .button2 button {
   width: 100%;
   height: 100%;
@@ -753,6 +849,7 @@ input[type="checkbox"]:checked ~ label > img {
   color: #887528;
   background: none;
 }
+
 .alert {
   padding: 20px;
   color: #155724;
@@ -776,11 +873,16 @@ input[type="checkbox"]:checked ~ label > img {
 }
 
 .buttonload {
-  background-color: #04aa6d; /* Green background */
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  padding: 12px 24px; /* Some padding */
-  font-size: 16px; /* Set a font-size */
+  background-color: #04aa6d;
+  /* Green background */
+  border: none;
+  /* Remove borders */
+  color: white;
+  /* White text */
+  padding: 12px 24px;
+  /* Some padding */
+  font-size: 16px;
+  /* Set a font-size */
 }
 
 /* Add a right margin to each icon */
@@ -788,6 +890,7 @@ input[type="checkbox"]:checked ~ label > img {
   margin-left: -12px;
   margin-right: 8px;
 }
+
 /* contact stylin end */
 /* footer */
 footer {
@@ -796,10 +899,12 @@ footer {
   text-align: center;
   color: white;
 }
+
 footer span a {
   color: #887528;
   text-decoration: none;
 }
+
 footer span a:hover {
   text-decoration: underline;
 }
@@ -845,12 +950,15 @@ footer span a:hover {
     padding-top: 80px;
     transition: all 0.3s ease;
   }
+
   .navbar2 .menu2.active {
     left: 0;
   }
+
   .navbar2 .menu2 li {
     display: block;
   }
+
   .navbar2 .menu2 li a {
     display: inline-block;
     margin: 20px 0;
@@ -860,31 +968,39 @@ footer span a:hover {
   .home2 .home-content .text-2 {
     font-size: 60px;
   }
+
   .home2 .home-content .text-3 {
     font-size: 20px;
   }
+
   .home2 .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
+
   .max-width2 {
     max-width: 800px;
   }
+
   .about .about-content .column2 {
     width: 100%;
   }
+
   .about .about-content .left2 {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
+
   .about .about-content .right2 {
     flex: 100%;
   }
+
   .services .serv-content .card2 {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
+
   .skills .skills-content .column2,
   .contact .contact-content .column2 {
     width: 100%;
@@ -896,15 +1012,19 @@ footer span a:hover {
   .max-width2 {
     padding: 0 23px;
   }
+
   .home2 .home-content .text-2 {
     font-size: 55px;
   }
+
   .home2 .home-content .text-3 {
     font-size: 20px;
   }
+
   .home2 .home-content a {
     font-size: 20px;
   }
+
   .services .serv-content .card2 {
     width: 100%;
   }
@@ -914,6 +1034,7 @@ footer span a:hover {
   .home2 .home-content .text-2 {
     font-size: 50px;
   }
+
   .home2 .home-content .text-3 {
     font-size: 16px;
   }
