@@ -294,6 +294,16 @@ section .title {
   }
 }
 
+.baranimation {
+  animation: hue-rotate 3s alternate infinite;
+}
+
+@keyframes hue-rotate {
+  100% {
+    filter: hue-rotate(300deg);
+  }
+}
+
 .about .about-content .left2 img {
   height: 400px;
   width: 400px;
