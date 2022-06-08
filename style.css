@@ -42,6 +42,7 @@ html {
   color: white;
   font-size: 35px;
   font-weight: 600;
+  font-family: "Brush Script Std", serif;
 }
 
 .navbar2 .logo2 a span {
@@ -65,6 +66,7 @@ html {
   font-weight: 500;
   margin-left: 25px;
   transition: color 0.3s ease;
+  font-family: "Comic Sans MS", cursive;
 }
 
 .navbar2 .menu2 li a:hover {
@@ -172,17 +174,20 @@ html {
 
 .home2 .home-content .text-1 {
   font-size: 27px;
+  font-family: "Poppins", sans-serif;
 }
 
 .home2 .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
+  font-family: "Comic Sans MS", cursive;
 }
 
 .home2 .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .home2 .home-content .text-3 span {
@@ -190,7 +195,39 @@ html {
   font-weight: 500;
 }
 
-.home2 .home-content a {
+.text-4 {
+  color: #887528;
+  font-weight: 800;
+  margin-top: 40px;
+  font-size: 1.4em;
+  font-family: "Poppins", sans-serif;
+}
+
+.animation2 {
+  animation: animation2 4s linear infinite;
+  letter-spacing: 6px;
+  transition: text-shadow 300ms;
+}
+
+@keyframes animation2 {
+  0% {
+    opacity: 0;
+    font-style: italic;
+  }
+
+  50% {
+    text-shadow: red 6 0, cyan -6px 0;
+    font-style: italic;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: red -8px 0, cyan 8px 0;
+    font-style: italic;
+  }
+}
+
+.home2 .home-content .btnhire {
   display: inline-block;
   background: #887528;
   color: white;
@@ -205,6 +242,39 @@ html {
 .home2 .home-content a:hover {
   color: #887528;
   background: none;
+}
+
+.iconFindMe {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.iconFindMe img {
+  margin-right: 20px;
+  width: 40px;
+}
+
+
+.blink {
+  animation: blink 3s linear infinite;
+  letter-spacing: 3px;
+  text-shadow: red 0 0, cyan 0 0;
+  transition: text-shadow 300ms;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* semua kode yang sama */
@@ -993,9 +1063,14 @@ footer span a:hover {
     font-size: 20px;
   }
 
-  .home2 .home-content a {
+  .home2 .home-content .btnhire {
     font-size: 23px;
     padding: 10px 30px;
+  }
+
+  .iconFindMe img {
+    width: 35px;
+    margin-right: 15px;
   }
 
   .max-width2 {
@@ -1041,8 +1116,13 @@ footer span a:hover {
     font-size: 20px;
   }
 
-  .home2 .home-content a {
+  .home2 .home-content .btnhire {
     font-size: 20px;
+  }
+
+  .iconFindMe img {
+    width: 25px;
+    margin-right: 10px;
   }
 
   .services .serv-content .card2 {
