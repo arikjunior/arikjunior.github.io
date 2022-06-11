@@ -1,7 +1,7 @@
 .calculator {
     text-align: center;
     margin: 0 auto;
-    padding: 200px;
+    padding: 50px 200px;
     width: 400px;
 }
 
@@ -51,4 +51,79 @@ button:hover {
 .operator:hover, .equal-sign:hover {
     background-color: transparent;
     color: #000;
+}
+
+.animasispan {
+    animation: blink2 3s linear infinite;
+}
+
+@keyframes blink2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.animasi {
+    animation: blink 3s linear infinite;
+}
+
+span {
+    color: crimson;
+}
+
+@keyframes blink {
+    0% {
+
+        color: black;
+    }
+
+    10% {
+        color: crimson;
+    }
+
+    20% {
+        color: black;
+    }
+
+    30% {
+        color: crimson;
+    }
+
+    40% {
+        color: black;
+    }
+
+    50% {
+        color: crimson;
+        letter-spacing: 10px;
+    }
+
+    60% {
+        color: black;
+    }
+
+    70% {
+        color: crimson;
+    }
+
+    80% {
+        color: black;
+    }
+
+    90% {
+        color: crimson;
+    }
+
+    100% {
+        color: black;
+    }
 }
