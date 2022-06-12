@@ -3,7 +3,7 @@
 body {
     width: 100%;
     background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(94, 141, 217));
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 
 .calculator {
@@ -198,16 +198,7 @@ span {
 @media only screen and (max-width: 700px) {
     .calculator {
         text-align: center;
-        padding: 20px 100px;
-        width: 300px;
-    }
-
-}
-
-@media only screen and (max-width: 496px) {
-    .calculator {
-        text-align: center;
-        padding: 20px 20px;
+        padding: 20px 50px;
         width: 300px;
     }
 
