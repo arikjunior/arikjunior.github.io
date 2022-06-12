@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 body {
-    height: 100%;
     background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(94, 141, 217));
     background-repeat: no-repeat;
     background-size: 100%;
