@@ -2,8 +2,6 @@
 
 body {
     background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(94, 141, 217));
-    background-repeat: repeat-x;
-    background-size: 100%;
 }
 
 .calculator {
