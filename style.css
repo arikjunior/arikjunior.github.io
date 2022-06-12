@@ -46,11 +46,13 @@ button {
 button:hover {
     background-color: transparent;
     color: #000;
+    border: 10px dashed crimson;
 }
 
 .operator:hover, .equal-sign:hover {
     background-color: transparent;
     color: #000;
+    border: 10px dashed gray;
 }
 
 .animasispan {
@@ -78,6 +80,7 @@ button:hover {
 
 span {
     color: crimson;
+    font-weight: bolder;
 }
 
 @keyframes blink {
@@ -104,7 +107,7 @@ span {
 
     50% {
         color: crimson;
-        letter-spacing: 10px;
+        letter-spacing: 8px;
     }
 
     60% {
