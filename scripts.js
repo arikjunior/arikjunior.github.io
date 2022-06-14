@@ -118,4 +118,7 @@ deleteButton.addEventListener("click", () => {
 
 const delNumber = () => {
     currentNumber = currentNumber.toString().slice(0, -1)
+    if (currentNumber == '') {
+        return currentNumber = "0"
+    }
 }
