@@ -49,6 +49,9 @@ const inputOperator = (operator) => {
 const equalSign = document.querySelector(".equal-sign")
 
 equalSign.addEventListener("click", () => {
+    if (equalSign == currentNumber) {
+        return currentNumber = "0"
+    }
     calculate()
     updateScreen(currentNumber)
 })
@@ -69,6 +72,7 @@ const calculate = () => {
             result = parseFloat(prevNumber) / parseFloat(currentNumber)
             break
         default:
+            result = "0"
             break
     }
     currentNumber = result
