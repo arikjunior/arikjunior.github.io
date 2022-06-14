@@ -15,7 +15,11 @@ const calculatorScreen = document.querySelector(".calculator-screen")
 const updateScreen = (number) => {
     calculatorScreen.value = number
 }
-
+// prevScreen
+const prevScreen = document.querySelector('.prev-screen');
+const updatePrevScreen = (operation) => {
+    prevScreen.value = operation;
+}
 // Number Clicked
 const numbers = document.querySelectorAll(".number")
 
@@ -27,14 +31,7 @@ numbers.forEach((number) => {
 })
 
 
-// Operator Clicked
-const operators = document.querySelectorAll(".operator")
 
-operators.forEach((operator) => {
-    operator.addEventListener("click", (event) => {
-        inputOperator(event.target.value)
-    })
-})
 
 const inputOperator = (operator) => {
     if (calculationOperator === '') {
@@ -45,17 +42,8 @@ const inputOperator = (operator) => {
 }
 
 
-// Proses Perhitungan 
-const equalSign = document.querySelector(".equal-sign")
 
-equalSign.addEventListener("click", () => {
-    if (equalSign == currentNumber) {
-        return currentNumber = "0"
-    }
-    calculate()
-    updateScreen(currentNumber)
-})
-
+// Perhitungan
 const calculate = () => {
     let result = ''
     switch (calculationOperator) {
@@ -68,7 +56,7 @@ const calculate = () => {
         case '*':
             result = parseFloat(prevNumber) * parseFloat(currentNumber)
             break
-        case '/':
+        case '÷':
             result = parseFloat(prevNumber) / parseFloat(currentNumber)
             break
         default:
@@ -79,6 +67,42 @@ const calculate = () => {
     calculationOperator = ''
 }
 
+// Proses Perhitungan 
+const equalSign = document.querySelector(".equal-sign")
+
+equalSign.addEventListener("click", () => {
+    // if (calculationOperator == undefined) {
+    //     return calculationOperator = divide;
+    // }
+    updatePrevScreen(prevNumber + ' ' + calculationOperator + ' ' + currentNumber)
+    calculate()
+    updateScreen(currentNumber)
+})
+
+// Operator Clicked
+const operators = document.querySelectorAll(".operator")
+
+operators.forEach((operator) => {
+    operator.addEventListener("click", (event) => {
+        updatePrevScreen(currentNumber)
+        inputOperator(event.target.value)
+    })
+})
+
+// Percentage
+
+const percentage = document.querySelector('.percentage');
+percentage.addEventListener('click', () => {
+    percentageOutput();
+    updateScreen(currentNumber);
+});
+
+const percentageOutput = () => {
+    let percent = '';
+    percent = parseFloat(currentNumber) / 100;
+    currentNumber = percent;
+}
+
 
 // Clear Button 
 const clearBtn = document.querySelector(".all-clear")
@@ -86,6 +110,7 @@ const clearBtn = document.querySelector(".all-clear")
 clearBtn.addEventListener("click", () => {
     clearAll()
     updateScreen(currentNumber)
+    updatePrevScreen("");
 })
 
 const clearAll = () => {
